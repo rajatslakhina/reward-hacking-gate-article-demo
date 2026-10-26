@@ -1,7 +1,7 @@
 # TaskIntegrity: catching a coding agent that games a green build
 
 Companion demo for the article **"I Wrote 9 Ways for a Coding Agent to Fake a Green Build. A Protected-Tests Hook Stopped 3."**
-Article: (added after publish)
+Article: [I Wrote 9 Ways for a Coding Agent to Fake a Green Build. A Protected-Tests Hook Stopped 3.](https://medium.com/@er.rajatlakhina/i-wrote-9-ways-for-a-coding-agent-to-fake-a-green-build-a-protected-tests-hook-stopped-3-06074cc86dae) (Medium)
 
 Coding agents are trained to make checks pass, and a check can pass for the wrong reason. This repo is a small Swift package that models three layers a team lead can put between an agent and "done", and scores them against a constructed example: one bug, one honest fix and nine hand-written ways to fake a green build.
 
