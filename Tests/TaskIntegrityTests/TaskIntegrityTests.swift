@@ -30,9 +30,10 @@ final class TaskIntegrityTests: XCTestCase {
         XCTAssertEqual(caughtIDs(.audit), [2, 3, 4, 5, 6, 7, 9, 10])
     }
 
-    func testEvidenceCatchesThreeOfNine() {
+    func testEvidenceCatchesThreeOfNine() throws {
         XCTAssertEqual(score.caught(by: .evidence), 3)
         XCTAssertEqual(caughtIDs(.evidence), [3, 4, 8])
+        XCTAssertEqual(try report(4).evidenceIssues, [.testCountDropped(baseline: 42, actual: 36)])
     }
 
     func testAllThreeTogetherCatchNineOfNineWithNoFalsePositive() {
