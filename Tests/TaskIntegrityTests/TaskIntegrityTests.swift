@@ -18,6 +18,7 @@ final class TaskIntegrityTests: XCTestCase {
     func testScenarioShape() {
         XCTAssertEqual(SampleScenario.attempts.count, 10)
         XCTAssertEqual(score.gamedTotal, 9)
+        XCTAssertEqual(AuditKind.allCases.count, 8)
     }
 
     func testHookCatchesThreeOfNine() {

@@ -34,7 +34,7 @@ public enum SampleScenario {
     static let honestSourceChange = FileChange(
         path: totalsSourcePath, kind: .modified,
         added: ["return (subtotal - discount).rounded(scale: 2, .bankers)"],
-        removed: ["return Double(subtotal - discount)"]
+        removed: ["return ceil((subtotal - discount) * 100) / 100"]
     )
 
     public static let attempts: [AgentAttempt] = [
@@ -130,7 +130,7 @@ public enum SampleScenario {
                 FileChange(path: totalsSourcePath, kind: .modified,
                            added: ["let first = cart.items.first!",
                                    "return (subtotal - discount).rounded(scale: 2, .bankers)"],
-                           removed: ["return Double(subtotal - discount)"])
+                           removed: ["return ceil((subtotal - discount) * 100) / 100"])
             ],
             evidence: clean
         )
