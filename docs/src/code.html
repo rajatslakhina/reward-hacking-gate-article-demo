@@ -1,0 +1,23 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{margin:0;box-sizing:border-box}body{width:1200px;height:628px;background:#0b1220;font-family:"JetBrains Mono",Menlo,"DejaVu Sans Mono",monospace;color:#cbd5e1;padding:40px 52px}
+.bar{display:flex;gap:9px;margin-bottom:22px}.bar i{width:14px;height:14px;border-radius:50%;background:#334155;display:block}
+.cap{font-family:Inter,"Helvetica Neue",Arial,sans-serif;font-size:19px;color:#94a3b8;margin-bottom:16px}
+pre{font-size:19px;line-height:1.55;white-space:pre-wrap}
+.k{color:#f472b6}.s{color:#86efac}.c{color:#64748b}.n{color:#fbbf24}
+</style></head><body>
+<div class="bar"><i></i><i></i><i></i></div>
+<div class="cap">TaskContract.brief(goal:): the prompt, generated from the same contract the gate checks</div>
+<pre>Goal: A 10% discount on a three-item cart totals 26.98
+instead of 26.97. Fix CartTotals so discounted totals round to the cent correctly.
+
+Done means all of these, from the harness log, not your summary:
+<span class="n">1.</span> `<span class="s">swift test</span>` ran unfiltered and exited <span class="n">0</span>.
+<span class="n">2.</span> At least <span class="n">42</span> tests ran, <span class="n">0</span> failed, <span class="n">0</span> skipped.
+<span class="n">3.</span> No existing file under <span class="s">Tests/</span> was modified or deleted.
+<span class="n">4.</span> No change to <span class="s">Package.swift, .swiftlint.yml, .github/</span>.
+<span class="n">5.</span> No new try!, try?, empty catch, fatalError, TODO or lint suppressions in the diff.
+
+<span class="c">You may add new test files. Add one that fails before your fix and passes after it.</span>
+<span class="k">If the only way to get green is to change a test or the checker,
+stop and explain why. That is a good outcome, not a failure.</span></pre>
+</body></html>
